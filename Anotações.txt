@@ -1,0 +1,216 @@
+ - Os fundamentos para um profissional de java são:
+
+1 - Lógica de programação (Esse é o ponto de início para um programador, e oque antecede aos fundamentos citados abaixo)
+2 - Estrutura de Dados
+3 - Programação Orientada a Objetos
+4 - Banco de Dados
+5 - Análise & Design de Sistemas
+
+- A parte Comercial para um profissional de java engloba como principais tópicos dentro do mercado de trabalho, os nichos abaixo:
+
+1 - Back end
+2 - WEB
+3 - Mobile
+4 - Desktop
+
+- Para que você tenha uma boa experiência comercial, é imprescindível que haja domínio dos fundamentos, sendo o principal fundamento a Programação Orientada a Objetos
+
+- Algoritmo: Sequência finita de instruções para se resolver um problema.
+* Exemplo: Para lavar roupa suja, o algoritmo a ser seguido é o seguinte:
+
+1 - Colocar a roupa em um recipiente
+2 - Colocar um pouco de sabão e amaciante
+3 - Encher de água
+4 - Mexer tudo até dissolver todo o sabão
+5 - Deixar de molho por vinte minutos
+6 - Esfregar a roupa
+7 - Enxaguar
+8 - Torcer
+
+- Automação: Consiste em utilizar máquina(s) para executar o procedimento desejado de forma automática ou semiautomática.
+* Exemplo: Para lavar roupa suja, o algoritmo a ser seguido com automação é o seguinte:
+
+1 - Colocar a roupa em um recipiente -- Manual
+2 - Colocar um pouco de sabão e amaciante -- Manual
+1 - Colocar a roupa em um recipiente -- Automatizado
+2 - Colocar um pouco de sabão e amaciante -- Automatizado
+3 - Encher de água -- Automatizado
+4 - Mexer tudo até dissolver todo o sabão -- Automatizado
+5 - Deixar de molho por vinte minutos -- Automatizado
+6 - Esfregar a roupa -- Automatizado
+7 - Enxaguar -- Automatizado
+8 - Torcer -- Automatizado
+
+- Em um computador temos o Hardware (Parte física, a máquina em si) e o Software (Parte lógica, programas como OS, Aplicativos, Jogos, Utilitários e outros), dentro do computador nós temos uma similaridade entre o conceito de programa e algoritmo, podendo dizer que os programas de computador são algoritmos executados pela máquina, logo, o computador é uma máquina que automatiza a execução de algoritmos computacionais, como processamento de dados e cálculos
+
+- Para que um software seja criado, é necessária uma linguagem de programação com regras léxicas e sintáticas para se escrever um programa, uma IDE para editar e testar o programa, um compilador para transformar o código fonte em código objeto e um gerador de código ou máquina virtual para que o programa seja executado.
+
+- Léxica: Diz respeito à correção das palavras "isoladas" (Ortografia) 
+Exemplo: main (Correto) maim (Incorreto)
+
+- Sintática: Diz respeito à correção das sentenças (Gramática) 
+Exemplo: x = 2 * y; (Correto) x = + 2y; (Incorreto)
+
+- IDE (Ambiente Integrado de Desenvolvimento): É um conjunto de ‘softwares’ utilizado para a construção de programas.
+Exemplo: Code Blocks (C/C++), Eclipse (Java), NetBeans (Java), Microsoft Visual Studio (C#)
+
+- Funcionalidades de uma IDE (Essa oferece várias funcionalidades para facilitar a construção dos programas):
+1 - Edição de código fonte (indentação, autocomplete, destaque de palavras, etc.);
+2 - Depuração de testes;
+3 - Construção do produto final (build);
+4 - Sugestão de modelos (templates);
+5 - Auxiliar em várias tarefas do seu projeto;
+6 - Etc.
+
+- Código fonte: É aquele escrito pelo programador em linguagem de programação.
+
+- Compilação: É um processo que converte por meio do compilador que faz a análise léxica e sintática, e estando tudo correto, compila o código fonte em código objeto, após isso, o código objeto passa por um gerador de código (processo de construção (build)) e se torna um código executável, podendo ser executado pelo sistema operacional, no entanto, a compilação é feita apenas para um sistema operacional específico, sendo assim, para cada sistema operacional, é necessário compilar a aplicação novamente seguindo as diretrizes necessárias, havendo, em alguns casos, adaptações no código.
+* Obs.: esse modelo de abordagem é utilizado por linguagens como C e C++.
+
+- Interpretação: É um processo que converte por meio de um interpretador que faz a análise léxica, sintática, a geração do código sob demanda e o executa, o interpretador é específico para cada sistema operacional, e devido ao código não ser compilado, ele é mais suscetível que as linguagens compiladas a ter bugs.
+* Obs.: esse modelo de abordagem é utilizado por linguagens como PHP, JavaScript, Python e Ruby. (Linguagens interpretadas)
+
+- Abordagem híbrida: É um processo onde o código-fonte passa por um Compilador que faz a precompilação fazendo uma análise léxica e sintática, gerando um código objeto que recebe o nome de bytecode, o bytecode é um código pre compilado que ao invés de passar por um gerador de código, é executado por uma máquina virtual que faz uma geração de código sob demanda e realiza a execução, por ter uma compilação para bytecode, ele é menos suscetível a ter bugs e por conta de a interpretação ser feita pela máquina virtual (JVM ou Microsoft .NET Framework), há uma facilidade para que o sistema operacional consiga rodar o aplicativo.
+* Obs.: esse modelo de abordagem é utilizado por linguagens como C (Microsoft .NET Framework) e Java (JVM).
+
+- Vantagens da compilação: velocidade do programa e auxílio do compilador antes da execução.
+
+- Vantagens da interpretação: flexibilidade de manutenção do aplicativo em produção, expressividade da linguagem e código fonte não precisa ser recompilado para rodar em plataformas diferentes.
+
+- Vantagens da abordagem híbrida: velocidade do programa (parcial), auxílio do compilador antes da execução (completa), flexibilidade de manutenção do aplicativo em produção (parcial) e código fonte não precisa ser recompilado para rodar em plataformas diferentes (completa)
+*Obs.: foi explicado dessa forma, pois a abordagem híbrida pega pontos positivos das abordagens citadas anteriormente de forma parcial ou completa.
+
+- Funcionamento das abordagens:
+1 - Compilação: Código fonte -> Código executável (específico para o sistema operacional) -> Sistema Operacional -> Hardware
+2 - Interpretação: Código fonte -> Interpretador -> Sistema Operacional -> Hardware
+3 - Híbrida: Código fonte -> Bytecode -> Máquina virtual -> Sistema Operacional -> Hardware
+
+
+- Oque é o Java?: É uma Linguagem de programação com regras sintáticas, mas também é uma plataforma de desenvolvimento e execução que nos oferece bibliotecas (API) e também ambientes de execução.
+
+- Histórico do Java: o Java foi criado pela Sun Microsystems no meio da década de 1990 e adquirido pela Oracle Corporation em 2010, os problemas resolvidos por essa linguagem e os motivos do seu sucesso foram os ponteiros, gerenciamento de memória, a correção da portabilidade falha, onde era necessário reescrever parte do código ao mudar de OS, a possibilidade de uso em diversos dispositivos variados e o seu baixo custo.
+
+- Aspectos notáveis do Java: O código é compilado para bytecode e executado em uma máquina virtual (JVM (Java Virtual Machine)), a linguagem é portável, segura e robusta, roda em vários tipos de dispositivos, tem domínio do mercado corporativo desde o fim do século 20 e foi o padrão do sistema Android por muitos anos.
+
+- Java ME (Java Micro Edition): Focado em dispositivos embarcados e móveis.
+* Documentação da edição: http://www.oracle.com/technetwork/java/javame
+
+- Java SE (Standard Edition): Versão mais básica da plataforma Java, que contém recursos para desenvolvimento de aplicativos em Java, o principal de tudo do java, o core, que é utilizado em desktops e servidores, mas também pode ser utilizada em aplicações web em algumas situações.
+* Documentação da edição: http://www.oracle.com/technetwork/java/javase
+
+- Java EE (Java Enterprise Edition): Versão focada em aplicações corporativas.
+* Documentação da edição: http://www.oracle.com/technetwork/java/javaee
+
+- LTS (Long Term Support): Quer dizer suporte de longo período, quer dizer que a aplicação terá um suporte de vários anos (Preferido pelas empresas).
+
+- JVM (Java Virtual Machine): Máquina virtual do Java (necessário para executar sistemas Java).
+
+- Uma aplicação é composta por classes.
+
+- Um pacote (package) é um agrupamento lógico de classes relacionadas.
+
+- Módulo (Java 9+) é um agrupamento lógico (Um nível conceitual e um nível de códigos, que pode ser compilado pra gerar o build ou runtime) de pacotes relacionados Runtime (Agrupamento físico).
+
+- Aplicação é um agrupamento de módulos relacionados.
+
+- JDK (Java Development Kit ou Kit de Desenvolvimento Java): É um conjunto de ferramentas essenciais para desenvolvimento de aplicações em Java.
+
+- JRE (Java Runtime Environment): É um software essencial para executar aplicações desenvolvidas em Java, ele fornece o ambiente necessário para que os programas Java funcionem corretamente, incluindo a JVM e bibliotecas de classes Java.
+
+- Operadores aritméticos:
+1: + = adição
+2: - = subtração
+3: * = multiplicação
+4: / = divisão
+5: % = resto da divisão ("mod")
+
+- Precedência
+1: * / %
+2: + -
+
+- Um software em execução lida com dados armazenados em variáveis
+
+- Para declarar a variável, a sintaxe é a seguinte: <tipo> <nome> = <valorinicial>; (sendo o valor inicial opcional)
+
+- Tipos primitivos em Java:
+* tipos numéricos inteiros
+1 - byte: tem o tamanho de 8 bits (-128 a 127) e valor padrão 0
+2 - short: tem o tamanho de 16 bits (-32768 a 32767) e valor padrão 0
+3 - int: tem o tamanho de 32 bits (-2147483648 a 2147483647) e valor padrão 0
+4 - long: tem o tamanho de 64 bits (-9223372036854770000 a 9223372036854770000) e valor padrão 0L
+
+* tipos numéricos com ponto flutuante:
+1 - float: tem o tamanho de 32 bits (1,4024E-37 a 3,4028E+38) e valor padrão 0,0f
+2 - double: tem o tamanho de 64 bits (-4,94E-307 a 1,79E+308) e valor padrão 0,0
+
+* Um caractere Unicode
+1 - char: tem o tamanho de 16 bits e armazena apenas um caractere ('\u0000' a '\uFFFF') e valor padrão '\u0000'
+
+* valor verdade
+1 - boolean: tem o tamanho de 1 bit ({false, true}) e valor padrão false
+
+- Regras para nomes de variáveis:
+1 - Não pode começar com dígito, sempre utilizar uma letra ou _;
+2 - Não pode ter espaço em branco;
+3 - Não utilizar acentos ou til;
+4 - Sugestão: use o padrão camelCase.
+
+- Operações realizadas por um software:
+1 - Entrada de dados: É quando o usuário informa dados para o programa, esses dados são armazenados em variáveis;
+2 - Processamento de dados: É quando o programa realiza os cálculos, o processamento de dados se dá por um comando chamado atribuição;
+3 - Saída de dados: É quando o programa informa dados para o usuário, essa operação também é chamada de escrita "O programa está a escrever dados".
+
+- O ln em System.out.println(""); representa que há quebra de linha, caso não desejar uma quebra de linha após a mensagem, utilizar System.out.print("");
+
+- O f em System.out.printf (); significa formatado, para declarar a quantidade de casas decimais, é feito da seguinte forma: System.out.printf("%.xf%n", variavel); onde x será a quantidade de casas decimais apresentadas, já o %n significa a quebra de linha.
+
+- Marcadores de escrita no printf:
+1 - %f = ponto flutuante;
+2 - %d = inteiro;
+3 - %s = texto;
+4 - %n = quebra de linha.
+
+- Na sintaxe, o colocar o = (exemplo: String nome = "Ayala";), lê se que a String nome recebe o valor Ayala.
+
+- Scanner: Um objeto utilizado para fazer entrada de dados.
+
+- Tipos de entrada do Scanner:
+1 - next(); -> Utilizado para Strings;
+2 - nextInt(); -> Utilizado para inteiros;
+3 - nextDouble(); -> Utilizado para doubles;
+4 - next().charAt(x) -> Utilizado para char, trocar o x pela posição do caracter a ser pego,
+o primeiro caracter é enumerado como 0, e não como 1.
+5 - nextLine(); -> Lê a informação até o fim da linha (se utilizar apenas o next, ele lerá apenas a primeira palavra).
+Obs.: Quando se usa um comando de leitura diferente do nextLine() e dá alguam quebra de linha, essa quebra de linha fica
+"Pendente" na entrada padrão, Ao fazer um nextLine(), aquela quebra de linha pendente será absorvida pelo nextLine().
+6 - close(); -> Utilizado para fechar o scanner quando ele não estiver mais em uso, por exemplo, para o scanner
+cujo nome é leitura, o código usado é leitura.close();
+Solução: fazer um nextLine() extra antes de fazer o nextLine() de seu interesse.
+
+- Funções matemáticas em Java:
+1 - A = Math.sqrt(x); -> Variável A recebe a raiz quadrada de x.
+2 - A = Math.pow(x, y); -> Variável A recebe o resultado de x elevado a y.
+3 - A = Math.abs(x); -> Variável A recebe o valor absoluto de x.
+
+- Operadores comparativos:
+1 - > : Maior
+2 - < : Menor
+3 - >= : Maior ou igual
+4 - <= : Menor ou igual
+5 - == : Igual
+6 - != : Diferente
+
+- Operadores lógicos:
+1 - && : E
+2 - || : OU
+3 - ! : NÃO
+
+- Operadores condicionais:
+
+1 - if () {}: if significa se, se o bloco de execução for verdadeiro de acordo com a operação
+ele executará oque está dentro do bloco.
+
+2 - else {}: else significa se não, se o bloco if não for verdadeiro, pode-se fazer um novo
+else {if () {}} que também pode ser escrito como else if () {} com uma nova condição ou apenas um else {} que será executado caso os parametros
+do bloco if não sejam atendidos.
+
