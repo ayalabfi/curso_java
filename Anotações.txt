@@ -214,3 +214,28 @@ ele executará oque está dentro do bloco.
 else {if () {}} que também pode ser escrito como else if () {} com uma nova condição ou apenas um else {} que será executado caso os parametros
 do bloco if não sejam atendidos.
 
+- Operadores de atribuição cumulativa:
+1 - a += b; -> a = a + b;
+2 - a -= b; -> a = a - b;
+3 - a *= b; -> a = a * b;
+4 - a /= b; -> a = a / b;
+5 - a %= b; -> a = a % b;
+
+- Switch Case:
+1 - É declarado de forma semelhante a um if e else, avaliando sempre uma expressão.
+2 - Sua declaração é feita da seguinte forma: switch (expressão) { case valor: execução do
+bloco; break; default: execução do bloco; break;}
+3 - Os cases podem possuir quantas ocasiões forem necessárias, identico a um if seguido de
+else if.
+4 - O default mostra a situação padrão, caso nenhum dos blocos seja acionado, semelhante a
+um else que finaliza uma operação condicional.
+
+- Expressão condicional ternária: Estrutura opcional ao if-else quando se deseja decidir um
+valor com base em uma condição.
+Sintaxe: (condição) ? valor_se_verdadeiro : valor_se_falso
+Exemplos: (2 > 4) ? 50 : 80 -> 80 // (10 != 3) ? "Maria" : "Alex" -> "Maria"
+
+- Escopo de uma variável: É a região do programa onde a variável é válida, ou seja, onde ela
+pode ser referenciada (Uma variável não pode ser usada se ainda não tiver sido inicializada).
+Obs.: Se uma variável for iniciada dentro de uma condição, ela não pode ser referenciada
+fora dessa condição.

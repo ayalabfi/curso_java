@@ -23,5 +23,6 @@ public class EntradaDeDadosDois {
         System.out.println(s2);
         System.out.println(s3);
 
+        sc.close();
 }
 }

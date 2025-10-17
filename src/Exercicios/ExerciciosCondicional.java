@@ -186,6 +186,10 @@ public class ExerciciosCondicional {
         } else {
             ImpostoExOito = (1000*0.08) + (1500*0.18) + ((salarioExOito - 4500) * 0.28);
             System.out.printf("R$ %.2f%n", ImpostoExOito);
+
+            scanner.close();
+
+            System.out.println("Exercicios finalizados.");
         }
     }
 }
