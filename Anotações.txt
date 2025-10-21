@@ -245,3 +245,11 @@ enquanto uma condição for verdadeira.
 Quando usar: Quando não se sabe previamente a quantidade de repetições que será realizada.
 Sintaxe: while (condição) {comandos}
 
+- Estrutura repetitiva "For": É uma estrutura de controle que repete um bloco de comandos para
+um certo intervalo de valores.
+Quando usar: quando se sabe previamente a quantidade de repetições, ou o intervalo de valores.
+sintaxe: for (inicio; condição; incremento){comandos}
+
+- Estrutua repetitiva "Do-while": É uma estrutura onde o bloco de comandos executa pelo menos
+uma vez, pois a condição é verificada no final.
+Sintaxe: do {comandos} while (condição);
