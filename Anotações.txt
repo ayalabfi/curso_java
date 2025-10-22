@@ -139,21 +139,31 @@ Exemplo: Code Blocks (C/C++), Eclipse (Java), NetBeans (Java), Microsoft Visual 
 3 - int: tem o tamanho de 32 bits (-2147483648 a 2147483647) e valor padrão 0
 4 - long: tem o tamanho de 64 bits (-9223372036854770000 a 9223372036854770000) e valor padrão 0L
 
-* tipos numéricos com ponto flutuante:
+* Tipos numéricos com ponto flutuante:
 1 - float: tem o tamanho de 32 bits (1,4024E-37 a 3,4028E+38) e valor padrão 0,0f
 2 - double: tem o tamanho de 64 bits (-4,94E-307 a 1,79E+308) e valor padrão 0,0
 
 * Um caractere Unicode
 1 - char: tem o tamanho de 16 bits e armazena apenas um caractere ('\u0000' a '\uFFFF') e valor padrão '\u0000'
 
-* valor verdade
+* Valor verdade
 1 - boolean: tem o tamanho de 1 bit ({false, true}) e valor padrão false
 
-- Regras para nomes de variáveis:
-1 - Não pode começar com dígito, sempre utilizar uma letra ou _;
-2 - Não pode ter espaço em branco;
-3 - Não utilizar acentos ou til;
-4 - Sugestão: use o padrão camelCase.
+- Restrições e convenções para nomes:
+1 - não pode começar com dígito (use letra ou _);
+2 - Não use acentos ou til;
+3 - Não pode ter espaço em branco;
+Sugestão: Use nomes que tenham um significado.
+
+- Convenções:
+1 - Camel Case (ex.: lastName) é usado em:
+1.1 - Pacotes;
+1.2 - Atributos;
+1.3 - Métodos;
+1.4 - Variáveis e parâmetros.
+
+2 - Pascal Case: (ex.: ProductCase) é usado em:
+2.1 - Classes.
 
 - Operações realizadas por um software:
 1 - Entrada de dados: É quando o usuário informa dados para o programa, esses dados são armazenados em variáveis;
@@ -169,8 +179,14 @@ Exemplo: Code Blocks (C/C++), Eclipse (Java), NetBeans (Java), Microsoft Visual 
 2 - %d = inteiro;
 3 - %s = texto;
 4 - %n = quebra de linha.
+(Informações relevantes)
+* Escrever %2.2f - Move a variável 2 caracteres para a direita (%2) e o ponto flutuante é apresentado
+com 2 casas decimais (.2f);
+* Escrever %-2.1f - Move a variável 2 caracteres para a esquerda (%-2) e o ponto flutuante é apresentado
+com 1 casa decimal (.1f)
 
-- Na sintaxe, o colocar o = (exemplo: String nome = "Ayala";), lê se que a String nome recebe o valor Ayala.
+
+- Na sintaxe, colocar o = (exemplo: String nome = "Ayala";), lê se que a String nome recebe o valor Ayala.
 
 - Scanner: Um objeto utilizado para fazer entrada de dados.
 
@@ -253,3 +269,24 @@ sintaxe: for (inicio; condição; incremento){comandos}
 - Estrutua repetitiva "Do-while": É uma estrutura onde o bloco de comandos executa pelo menos
 uma vez, pois a condição é verificada no final.
 Sintaxe: do {comandos} while (condição);
+
+- Operadores bitwise:
+
+1 - & -> Operação "E" bit a bit;
+2 - | -> Operação "Ou" bit a bit;
+3 - ^ -> Operação "OU-exclusivo" bit a bit;
+4 - 0b -> Antes do valor do int, incluir 0b para informar que o número apresentado será binário;
+4.1 - Exemplo: int mask = 0b00100000; (Esse valor é equivalente a 32).
+
+- Funções interessantes para String:
+1 - toLowerCase() -> transformar para minúsculo;
+2 - toUpperCase() -> transformar para maiúsculo;
+3 - trim() -> remover espaços;
+4 - substring(inicio) -> recorta a partir do inicio indicado;
+5 - substring(inicio, fim) -> recorta a partir do inicio indicado até o fim indicado;
+6 - Replace (char, char) -> Altera determinado caracter por outro;
+7 - Replace(string, string) -> Altera uma determinada String por outra;
+8 - IndexOf() -> Buscar a posição da primeira ocorrência da String;
+9 - LastIndexOf() -> Buscar a posição da ultima ocorrência da String;
+10  - str.Split("") -> Recortar a String com base em algum separador indicado e guardar os resultados
+em um vetor.

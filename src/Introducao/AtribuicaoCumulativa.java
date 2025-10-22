@@ -2,7 +2,7 @@ package Introducao;
 
 import java.util.Scanner;
 
-public class AtribuiçãoCumulativa {
+public class AtribuicaoCumulativa {
 
     public static void main(String[] args) {
 
