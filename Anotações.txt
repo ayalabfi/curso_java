@@ -290,3 +290,18 @@ Sintaxe: do {comandos} while (condição);
 9 - LastIndexOf() -> Buscar a posição da ultima ocorrência da String;
 10  - str.Split("") -> Recortar a String com base em algum separador indicado e guardar os resultados
 em um vetor.
+
+- Try Catch: É uma função que tenta realizar um comando, e caso ele falhe, é possível passar um parâmetro ou saída.
+Sintaxe: try {codigo} catch (Exception e) {Interações possíveis com e}
+
+As interações possíveis com a exceção são:
+1 - getMessage() -> pega a descrição da exceção (Útil para logs ou mensagens ao usuário);
+2 - printStackTrace(); -> Exibe a sequência de chamadas que levou à exceção (Útil em debug, mostra o caminho completo
+da falha);
+3 - getClass().getName()); -> Exibe a classe real da exceção;
+4 - Throwable variável = e.getCause(); if (variável != null) {System.out.println("Causa original": + variável.getMessage())
+-> Acessa a causa original da exceção (para encadeamento de exceções) caso uma exceção seja gerada por outra;
+5 - Throw new TipoDeExceção ("Mensagem de erro"); -> Lança uma exceção em tempo de execução (Usado para criar uma exceção
+manualmente quando algo inesperado acontece no seu código);
+
+
