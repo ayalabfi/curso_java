@@ -304,4 +304,24 @@ da falha);
 5 - Throw new TipoDeExceção ("Mensagem de erro"); -> Lança uma exceção em tempo de execução (Usado para criar uma exceção
 manualmente quando algo inesperado acontece no seu código);
 
+- Comentários em Java:
+
+1 - /* */ -> Comentário de bloco;
+2 - // -> Comentário de linha.
+
+- Funções (Sintaxe): Representam um processamento que possui um significado.
+ex.: Math.sqrt(double) // System.out.println(string).
+
+Principais vantagens: modularização, delegação e reaproveitamento.
+Dados de entrada e saída:
+1 - Funções podem receber dados de entrada (parâmetros ou argumentos);
+2 - Funções podem ou não retornar uma saída.
+
+Em orientação a objetos, funções em classes recebem o nome de "métodos".
+
+
+
+
+
+
 
