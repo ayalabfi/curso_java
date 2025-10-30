@@ -319,9 +319,29 @@ Dados de entrada e saída:
 
 Em orientação a objetos, funções em classes recebem o nome de "métodos".
 
+- Classe: É a definição do tipo
 
+> É um tipo estruturado que pode conter (membros);
+1 - Atributos (dados / campos);
+2 - Métodos (funções / operações).
 
+> A classe também pode prover muitos outros recursos, tais como:
+1 - Construtores;
+2 - Sobrecarga;
+3 - Encapsulamento;
+4 - Herança;
+5 - Polimorfismo.
 
+> Exemplos:
+1 - Entidades: Produto, Cliente, Triangulo;
+2 - Serviços: ProdutoService, ClienteService, EmailService, StorageService;
+3 - Controladores: ProdutoController, ClienteController;
+4 - Utilitários: Calculadora, Compactador;
+5 - Outros (views, repositórios, gerenciadores, etc.).
 
+> Ao criar uma orientação a objetos, você passa a consumir menos memória, isso acontece, pois quando
+você cria por exemplo uma entidade com valores A, B, e C e insere essa entidade na sua classe, ao invés
+de consumir 3 espaços na memória stack para as variáveis A, B e C, ela consome apenas 1 espaço na memória
+stack que é uma referência aos dados na memória Heap (A, B e C) que são gerados ao executar o código.
 
-
+- Objetos: São instâncias da classe.
