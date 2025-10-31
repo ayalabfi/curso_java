@@ -51,11 +51,9 @@ public class ComparacaoTriangulos {
         y.b = scanner.nextDouble();
         y.c = scanner.nextDouble();
 
-        double p = (x.a + x.b + x.c) / 2;
-        double areaX = Math.sqrt(p * (p - x.a)*(p - x.b)*(p - x.c));
 
-        p = (y.a + y.b + y.c) / 2;
-        double areaY = Math.sqrt(p * (p - y.a)*(p - y.b)*(p - y.c));
+        double areaX = x.area();
+        double areaY = y.area();
 
         System.out.printf("Area do triangulo X: %.4f%n", areaX);
         System.out.printf("Area do triangulo Y: %.4f%n", areaY);

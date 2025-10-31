@@ -345,3 +345,4 @@ de consumir 3 espaços na memória stack para as variáveis A, B e C, ela consom
 stack que é uma referência aos dados na memória Heap (A, B e C) que são gerados ao executar o código.
 
 - Objetos: São instâncias da classe.
+> this -> referencia um objeto.
