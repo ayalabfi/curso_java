@@ -1,4 +1,4 @@
-package exercicios;
+package exerciciosLogica;
 
 public class ExercicioSaidaDeDados {
     public static void main(String[] args) {

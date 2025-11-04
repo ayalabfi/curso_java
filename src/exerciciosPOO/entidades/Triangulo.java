@@ -1,5 +1,5 @@
 // pacote da classe
-package exercicios.entidades;
+package exerciciosPOO.entidades;
 
 /* prefixo (public -> indica que o atributo ou método pode ser usado em outros arquivos)
 e o nome da classe (Triangulo) */

@@ -1,4 +1,4 @@
-package exercicios.entidades;
+package exerciciosPOO.entidades;
 
 public class Produto {
 
@@ -14,5 +14,14 @@ public class Produto {
     }
     public void removerProdutos(int quantidade) {
         this.quantidade -= quantidade;
+    }
+    public String toString() {
+        return nome
+                + ", $ "
+                + String.format("%.2f", preco)
+                + ", "
+                + quantidade
+                + " unidades, total: $ "
+                + String.format("%.2f", valorTotalEmEstoque());
     }
 }

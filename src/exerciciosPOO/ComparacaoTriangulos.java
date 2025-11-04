@@ -1,6 +1,6 @@
-package exercicios;
+package exerciciosPOO;
 
-import exercicios.entidades.Triangulo;
+import exerciciosPOO.entidades.Triangulo;
 
 import java.util.Scanner;
 

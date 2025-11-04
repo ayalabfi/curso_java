@@ -1,4 +1,4 @@
-package exercicios;
+package exerciciosLogica;
 
 import java.security.SecureRandom;
 import java.util.Scanner;

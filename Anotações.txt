@@ -346,3 +346,27 @@ stack que é uma referência aos dados na memória Heap (A, B e C) que são gera
 
 - Objetos: São instâncias da classe.
 > this -> referencia um objeto.
+
+- Toda classe em Java é uma subclasse da classe Object.
+
+> Object possui os seguintes métodos:
+1 - getClass - retorna o tipo do objeto;
+2 - equals - compara se o objeto é igual a outro;
+3 - hashCode - retorna um código hash do objeto;
+4 - toString - converte o objeto para String.
+
+> Ação do toString
+1 - String.format ("args", variavel); -> semelhante ao printf, permite formatar um campo do toString.
+
+- Membros: atributos e métodos
+
+- Membros estáticos: Também chamados de membros de classe (em oposição a membros de instância), são membros
+que fazem sentido independentemente de objetos. Não precisam de objeto para serem chamados. São chamados
+a partir do próprio nome da classe.
+
+> Aplicações comuns:
+1 - Classes utilitárias -> Ex.: Math.sqrt(double);
+2 - Declaração de constantes.
+
+> Uma classe que possui somente membros estáticos, pode ser uma classe estática também. Esta classe não
+poderá ser instânciada (criados novos objetos ex.: (Cliente cliente = new Cliente();)).

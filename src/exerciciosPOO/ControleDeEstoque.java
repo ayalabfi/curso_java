@@ -1,6 +1,6 @@
-package exercicios;
+package exerciciosPOO;
 
-import exercicios.entidades.Produto;
+import exerciciosPOO.entidades.Produto;
 
 import java.util.Scanner;
 
@@ -19,7 +19,20 @@ public class ControleDeEstoque {
         System.out.print("Quantidade: ");
         produto.quantidade = scanner.nextInt();
 
-        System.out.printf("%s, %.2f, %d", produto.nome, produto.preco, produto.quantidade);
+        System.out.println("Dados do produto:\n" + produto);
+
+        System.out.println("Entre com o número de produtos adicionados ao estoque: ");
+
+        int quantidade = scanner.nextInt();
+        produto.adicionarProdutos(quantidade);
+
+        System.out.println("Dados do produto atualizados:\n" + produto);
+
+        quantidade = scanner.nextInt();
+        produto.removerProdutos(quantidade);
+
+        System.out.println("Dados do produto atualizados:\n" + produto);
+
         scanner.close();
     }
 }
