@@ -345,7 +345,7 @@ de consumir 3 espaços na memória stack para as variáveis A, B e C, ela consom
 stack que é uma referência aos dados na memória Heap (A, B e C) que são gerados ao executar o código.
 
 - Objetos: São instâncias da classe.
-> this -> referencia um objeto.
+> this -> referencia o atributo do objeto.
 
 - Toda classe em Java é uma subclasse da classe Object.
 
@@ -370,3 +370,24 @@ a partir do próprio nome da classe.
 
 > Uma classe que possui somente membros estáticos, pode ser uma classe estática também. Esta classe não
 poderá ser instânciada (criados novos objetos ex.: (Cliente cliente = new Cliente();)).
+
+- Construtores: É uma operação especial da classe, que executa no momento da instanciação do objeto
+
+> Usos comuns:
+1 - Iniciar valores dos atributos;
+2 - Permitir ou obrigar que o objeto receba dados/dependências no momento de sua instanciação (injeção de
+dependencia).
+
+> Se um construtor customizado não for especificado, a classe disponibiliza o construtor padrão.
+Ex.: Produto p = new Product();
+
+> É possível especificar mais de um construtor na mesma classe (sobrecarga).
+
+- Palavra this: É uma referência para o próprio objeto.
+
+> Usos comuns:
+1 - Diferenciar atributos de variáveis locais;
+2 - Passar o próprio objeto como argumento na chamada de um método ou construtor.
+
+- Sobrecarga: É um recurso que uma classe possui para oferecer mais de uma operação com o mesmo nome,
+porém com diferentes listas de parâmetros (É possível também incluir um construtor padrão).
