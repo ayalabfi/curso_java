@@ -391,3 +391,23 @@ Ex.: Produto p = new Product();
 
 - Sobrecarga: É um recurso que uma classe possui para oferecer mais de uma operação com o mesmo nome,
 porém com diferentes listas de parâmetros (É possível também incluir um construtor padrão).
+
+- Encapsulamento: É um princípio que consiste em esconder detalhes de implementação de uma classe,
+expondo apenas operações seguras e que mantenham os objetos em um estado consistente.
+
+> Regra de ouro: O objeto deve sempre estar em um estado consistente, e a própria classe deve garantir
+isso.
+
+> Um objeto não deve expor nenhum atributo (modificador de acesso private).
+
+> Os atributos devem ser acessados por meio de métodos get e set e esses métodos devem seguir o padrão
+camelCase no nome e serem criados depois dos construtores.
+
+- Modificadores de acesso: https://docs.oracle.com/javase/tutorial/java/javaOO/accesscontrol.html
+
+1 - private: O membro só pode ser acessado na própria classe;
+2 - (nada): o membro só pode ser acessado nas classes do mesmo pacote;
+3 - protected: o membro só pode ser acessado no mesmo pacote, bem como em subclasses de pacotes
+diferentes (Melhor entendido ao estar aprendendo ou já ter aprendido herança);
+4 - public: O membro é acessado por todas as classes (ao menos que ele resida em um módulo diferente que)
+não exporte o pacote onde ele está).
