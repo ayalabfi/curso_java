@@ -8,15 +8,14 @@ public class ExContaBancaria {
     private String nomeTitular;
     private double saldo;
 
-    public ExContaBancaria (int numeroConta, String nomeTitular, double saldo) {
+    public ExContaBancaria (int numeroConta, String nomeTitular, Scanner teclado) {
         this.numeroConta = numeroConta;
         this.nomeTitular = nomeTitular;
-        this.saldo = saldo;
+        depositar(teclado);
     }
     public ExContaBancaria (int numeroConta, String nomeTitular) {
         this.numeroConta = numeroConta;
         this.nomeTitular = nomeTitular;
-        this.saldo = 0;
         }
 
     public double getSaldo() {

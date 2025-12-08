@@ -23,9 +23,7 @@ public class CadastroBancario {
 
         ExContaBancaria cliente = null;
     if (decisao == 1) {
-        System.out.print("Insira o valor do depósito inicial: ");
-        double saldo = teclado.nextDouble();
-        cliente = new ExContaBancaria(conta, titular, saldo);
+        cliente = new ExContaBancaria(conta, titular, teclado);
     } else if (decisao == 2) {
         cliente = new ExContaBancaria(conta, titular);
     } else {
