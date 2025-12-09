@@ -411,3 +411,47 @@ camelCase no nome e serem criados depois dos construtores.
 diferentes (Melhor entendido ao estar aprendendo ou já ter aprendido herança);
 4 - public: O membro é acessado por todas as classes (ao menos que ele resida em um módulo diferente que)
 não exporte o pacote onde ele está).
+
+- Classes são tipos referência - Variáveis cujo tipo são classes não devem ser entendidas como caixas,
+mas sim como "tentáculos" (ponteiros) para caixas, pois dentro delas haverá uma referência
+que vai dizer onde vai estar o objeto.
+
+> Tipos referência aceitam o valor "null", que indica que a variável aponta pra ninguém.
+
+- Tipos primitivos são tipos valor - Em Java, tipos primitivos são tipos valor. Tipos valor são caixas
+e não ponteiros.
+
+- Valores padrão - Quando alocamos (new) qualquer tipo estruturado (classe ou array), são atríbuidos
+valores padrão aos seus elementos.
+
+> Números: 0;
+> boolean: false;
+> char: caractere código 0;
+> objeto: null.
+
+- Tipos referência vs. tipos valor
+
+* Comparativo: Classe | Tipo Primitivo;
+
+* Vantagem: usufrui de todos recursos OO | É simples e mais performático;
+
+* Variáveis são ponteiros | Variáveis são caixas;
+
+* Objetos precisam ser instanciados usando new, ou apontar para um objeto já existente | Não instancia.
+Uma vez declarados, estão prontos para uso;
+
+* Aceita valor null | Não aceita valor null;
+
+* Y = X: "Y passa a apontar para onde X aponta" | "Y recebe uma cópia de X";
+
+* Objetos instânciados no heap | "Objetos" instânciados no stack;
+
+* Objetos não utilizados são desalocados em um momento próximo pelo garbage collector | "Objetos" são
+desalocados imediatamente quando o seu escopo de execução é finalizado.
+
+- Garbage Collector - É um processo que automatiza a gestão de memória de um programa em execução.
+O garbage collector monitora os objetos alocados dinamicamente pelo programa (no heap), desalocando
+aqueles que não estão mais sendo usados.
+
+- Desalocação por escopo - Variáveis locais são desalocadas imediatamente assim que seu escopo local (chave)
+sai de execução.
