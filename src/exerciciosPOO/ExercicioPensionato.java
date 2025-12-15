@@ -13,7 +13,7 @@ public class ExercicioPensionato {
         System.out.print("Insira a quantidade de residentes a serem cadastrados: ");
         int n = sc.nextInt();
 
-        Pensionato[] moradores = new Pensionato[9];
+        Pensionato[] moradores = new Pensionato[10];
 
         for (int i = 0; i < n; i++){
             sc.nextLine();
@@ -36,7 +36,7 @@ public class ExercicioPensionato {
 
         for (int i = 0; i < moradores.length; i++){
             if (moradores[i] != null) {
-                System.out.printf("%d: %s, %s\n", i, moradores[i].getNome(), moradores[i].getEmail());
+                System.out.println(i + ": " + moradores[i]);
             }
         }
     }

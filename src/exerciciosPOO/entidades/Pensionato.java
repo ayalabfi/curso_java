@@ -3,11 +3,11 @@ package exerciciosPOO.entidades;
 public class Pensionato {
 
     private String nome;
-    private String Email;
+    private String email;
 
     public Pensionato(String nome, String email) {
         this.nome = nome;
-        Email = email;
+        this.email = email;
     }
 
     public String getNome() {
@@ -19,10 +19,15 @@ public class Pensionato {
     }
 
     public String getEmail() {
-        return Email;
+        return email;
     }
 
     public void setEmail(String email) {
-        Email = email;
+        this.email = email;
+    }
+
+    @Override
+    public String toString() {
+        return nome + ", " + email;
     }
 }

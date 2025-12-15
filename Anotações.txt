@@ -472,3 +472,58 @@ sai de execução.
 
 * Informações úteis:
 1 - .length - Retorna o tamanho do vetor;
+
+- Boxing: É o processo de conversão de um objeto tipo valor para um objeto tipo referência compatível.
+
+Ex.: int x = 20 (no stack é gerado um valor 20 relacionado ao x);
+Object obj = x (O obj é uma referência do tipo classe, e o obj aponta para uma variável 20 no Heap).
+
+- Unboxing: É o processo de conversão de um objeto tipo referência para um objeto tipo valor compatível.
+
+Ex.: int x = 20 (no stack é gerado um valor 20 relacionado ao x);
+Object obj = x (O obj é uma referência do tipo classe, e o obj aponta para uma variável 20 no Heap);
+int y = (int) obj (vai ser criado no stack uma variável y com o valor 20).
+
+- Wrapper Classes:
+1 - São classes equivalentes aos tipos primitivos;
+2 - Boxing e unbloxing é natural na linguagem;
+3 - Uso comum: campos de entidades em sistemas de informação(IMPORTANTE!);
+3.1 - Pois tipos referência (classes) aceitam valor null e usufruem dos recursos OO.
+
+* São elas:
+(Objeto)
+1 - Boolean - boolean;
+2 - Character - char.
+(Numero)
+1 - Byte - byte;
+2 - Short - short;
+3 - Integer - int;
+4 - Long - long;
+5 - Float - float;
+6 - Double - double.
+
+- Laço "for each": Sintaxe opcional e simplificada para percorrer coleções.
+Sintaxe:
+for (Tipo apelido : coleção) {
+<comando 1>
+<comando 2>
+}
+
+- Listas:
+* Lista é uma estrutura de dados:
+1 - Homogênea (dados do mesmo tipo);
+2 - Ordenada (elementos acessados por meio de posições);
+3 - Inicia vazia, e seus elementos são alocados sob demanda;
+4 - Cada elemento ocupa um "nó" (ou nodo) da lista.
+
+* Tipo (interface (não é possível instânciar esse tipo, é necessário uma classe que implementa)): List;
+
+* Classes que implementam: ArrayList, LinkedList, etc.
+
+* Vantagens:
+1 - Tamanho variável;
+2 - Facilidade para se realizar inserções e deleções.
+
+* Desvantagens:
+1 - Acesso sequencial aos elementos (nem sempre é assim, algumas classes otimizam isso).
+
