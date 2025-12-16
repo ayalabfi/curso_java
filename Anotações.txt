@@ -514,7 +514,8 @@ for (Tipo apelido : coleção) {
 1 - Homogênea (dados do mesmo tipo);
 2 - Ordenada (elementos acessados por meio de posições);
 3 - Inicia vazia, e seus elementos são alocados sob demanda;
-4 - Cada elemento ocupa um "nó" (ou nodo) da lista.
+4 - Cada elemento ocupa um "nó" (ou nodo) da lista;
+5 - Não aceita tipos primitivos, utilizar wrapper class.
 
 * Tipo (interface (não é possível instânciar esse tipo, é necessário uma classe que implementa)): List;
 
@@ -526,4 +527,12 @@ for (Tipo apelido : coleção) {
 
 * Desvantagens:
 1 - Acesso sequencial aos elementos (nem sempre é assim, algumas classes otimizam isso).
+
+* Comandos:
+1 - Tamanho da lista: size();
+2 - Inserir elemento na lista: add(obj), add(int, obj);
+3 - Remover elementos da lista: remove(obj), remove(int), removeIf(Predicado);
+4 - Encontrar posição de elemento: indexOf(obj), lastIndexOf(obj);
+5 - Filtrar lista com base em predicado(lambda): List<Integer> result = list.stream().filter(x -> x > 4).collect(Collectors.toList());
+6 - Encontrar primeira ocorrência com base em predicado: Integer result = list.stream().filter(x -> x > 4).findFirst().orElse(null);
 
