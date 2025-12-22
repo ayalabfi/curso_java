@@ -536,3 +536,20 @@ for (Tipo apelido : coleção) {
 5 - Filtrar lista com base em predicado(lambda): List<Integer> result = list.stream().filter(x -> x > 4).collect(Collectors.toList());
 6 - Encontrar primeira ocorrência com base em predicado: Integer result = list.stream().filter(x -> x > 4).findFirst().orElse(null);
 
+- Matrizes: Matriz é o nome dado a arranjos bidimensionais "Vetor de vetores";
+
+* Arranjo (Array) é uma estrutura de dados:
+1 - Homogênea (dados do mesmo tipo);
+2 - Ordenada (elementos acessados por meio de posições);
+3 - Alocada de uma vez só, em um bloco contíguo(próximo) de memória.
+
+* Vantagens:
+- Acesso imeadiato aos elementos pela sua posição;
+
+* Desvantagens:
+1 - Tamanho fixo;
+2 - Dificuldade para se realizar inserções e deleções.
+
+* Comandos:
+1 - .length = Quantidade de linhas;
+2 - vetor[linha].lenght = Quantidade de colunas.
