@@ -553,3 +553,76 @@ for (Tipo apelido : coleção) {
 * Comandos:
 1 - .length = Quantidade de linhas;
 2 - vetor[linha].lenght = Quantidade de colunas.
+
+- Datas
+
+* Conceitos importantes:
+1 - Data-[hora] local: ano-mês-dia-[hora] sem fuso horário ([hora] é opcional);
+2 - Data-hora global: ano-mês-dia-hora com fuso horário;
+3 - Duração: Tempo deccorido entre duas data-horas.
+
+* Quando usar?
+
+1 - Data-[hora] local: quando o momento exato não interessa a pessoas de outro fuso horário.
+Uso comum: sistemas de região única, Excel.
+Data de nascimento: "15/06/2001";
+Data-hora da venda: "13/08/2022 às 15:32" (presumindo não interessar fuso horário).
+
+2 - Data-hora global: quando o momento exato interessa a pessoas de outro fuso horário.
+Uso comum: sistemas multirregião, “web”.
+Quando será o sorteio? "21/08/2022 às 20h (Horário de São Paulo)";
+Quando o comentário foi postado? "Há 17 minutos";
+Quando foi realizada a venda? "13/08/2022 às 15:32 (Horário de São Paulo)";
+Inicio e fim do evento? "21/08/2022 às 14h até 16h (Horário de São Paulo)".
+
+* Timezone (fuso horário)
+
+1 - GMT - Greenwich Mean Time:
+Horário de Londres;
+Horário do padrão UTC - Coordinated Universal Time;
+Também chamado de "Z" time, ou Zulu time.
+
+2 - Outros fuso horários são relativos ao GMT/UTC:
+São Paulo: GMT-3;
+Manaus: GMT-4;
+Portugal: GMT+1.
+
+3 - Muitas linguagens/tecnologias usam nomes para as timezones:
+"US/Pacific";
+"America/Sao_Paulo";
+etc.
+
+* Padrão ISO 8601:
+
+1 - Data-[hora] local:
+2022-07-21;
+2022-07-21T14:52;
+2022-07-21T14:52:09;
+2022-07-21T14:52:09.4073.
+
+2 - Data-hora global:
+2022-07-23T14:52:09Z;
+2022-07-23T14:52:09.254935Z;
+2022-07-23T14:52:09-03:00 (Horário GMT-3).
+
+* Operações importantes com data-hora comumente usadas no dia a dia de um desenvolvedor:
+
+1 - Instanciação:
+(agora) -> Data-hora;
+Texto ISO 8601 -> Data-hora;
+Texto formato customizado -> Data-hora;
+dia, mês, ano, [horário] -> Data-hora local.
+
+2 - Formatação:
+Data-hora -> Texto ISO 8601;
+Data-hora -> Texto formato customizado.
+
+3 - Obter dados de uma data-hora local:
+Data-hora local -> dia, mês, ano, horário.
+
+4 - Converter data-hora global para local:
+Data-hora global, timezone (sistema local) -> Data-hora local.
+
+5 - Cálculos com data-hora:
+Data-hora +/- tempo -> Data-hora;
+Data-hora 1, Data-hora 2 -> Duração.
