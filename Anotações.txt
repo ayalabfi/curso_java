@@ -626,3 +626,19 @@ Data-hora global, timezone (sistema local) -> Data-hora local.
 5 - Cálculos com data-hora:
 Data-hora +/- tempo -> Data-hora;
 Data-hora 1, Data-hora 2 -> Duração.
+
+* Principais tipos Java:
+
+1 - Data-hora local:
+LocalDate
+LocalDateTime
+
+2 - Data-hora global
+Instant
+
+3 - Duração
+Duration
+
+4 - Outros
+ZoneId
+ChronoUnit
