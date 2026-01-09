@@ -642,3 +642,29 @@ Duration
 4 - Outros
 ZoneId
 ChronoUnit
+
+* Conteúdo Legado (Java 8)
+
+1 - Date Representa um INSTANTE e faz parte do pacote java.util
+Doc: https://docs.oracle.com/javase/10/docs/api/java/util/Date.html
+
+2 - Um objeto Date internamente armazena:
+O número de milissegundos desde a meia noite do dia 1 de janeiro de 1970 GMT (UTC)
+GMT: Greenwich Mean Time (time zone)
+UTC: Coordinated Universal Time (time standard);
+Obs.: São a mesma coisa. Anos atrás usava-se a designação GMT, atualmente usa-se a designação UTC.
+GMT ou Greenwich Mean Time (Hora Média em Greenwich) é a hora no meridiano que atravessa o laboratório
+astronómico da cidade de Greenwich no Reino Unido.
+
+3 - Para formatação da data, é necessário utilizar o SimpleDateFormat
+Doc: https://docs.oracle.com/javase/10/docs/api/java/text/SimpleDateFormat.html
+
+4 - O formato padrão é o ISO 8601 e a classe Instante é utilizada
+4.1 - Formato: yyyy-MM-ddTHH:mm:ssZ;
+4.1.1 - Exemplo: "2018-06-25T15:42:07Z"
+4.2 - Instant: Date y3 = Date.from(Instant.parse("2018-06-25T15:42:07Z")) -> Instancia uma data a partir
+do Instant, é necessário que a data esteja no formato ISO 8601.
+
+
+
+
