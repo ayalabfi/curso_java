@@ -665,6 +665,27 @@ Doc: https://docs.oracle.com/javase/10/docs/api/java/text/SimpleDateFormat.html
 4.2 - Instant: Date y3 = Date.from(Instant.parse("2018-06-25T15:42:07Z")) -> Instancia uma data a partir
 do Instant, é necessário que a data esteja no formato ISO 8601.
 
+- Enumerações:
+
+1 - É um tipo especial que serve para especificar de forma literal um conjunto de constantes relacionadas;
+
+2 - Palavra chave em Java: enum;
+
+3 - Vantagem: Melhor semântica, código mais legível e auxiliado pelo compilador.
+
+Doc: https://docs.oracle.com/javase/tutorial/java/javaOO/enum.html
 
 
+- Categorias de classes:
+
+1 - Em um sistema orientado a objetos, de modo geral "tudo" é objeto.
+
+2 - Por questões de design, tais como organização, flexibilidade, reuso, delegação, etc.,
+há várias categorias de classes:
+
+2.1 - Views -> Telas do sistema;
+2.2 - Controllers -> Faz o meio de campo entre a tela e o sistema;
+2.3 - Entities -> Entidades como clientes, produtos, pedidos...;
+2.4 - Services;
+2.5 - Repositories -> Responsável por acessar os dados, como um banco de dados.
 
