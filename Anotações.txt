@@ -689,3 +689,17 @@ há várias categorias de classes:
 2.4 - Services;
 2.5 - Repositories -> Responsável por acessar os dados, como um banco de dados.
 
+- Composição
+
+1 - É um tipo de associação que perimte que um objeto contenha outro;
+
+2 - Relação "tem-um" ou "tem-vários";
+
+3 - Vantagens:
+3.1 - Organização: divisão de responsabilidades;
+3.2 - Coesão;
+3.3 - Flexibilidade;
+3.4 - Reuso.
+
+Nota: Embora o símbolo UML para composição (todo-parte) seja o diamante preto, neste contexto
+estamos chamando de composição qualquer associação tipo "tem-um" e "tem vários".
