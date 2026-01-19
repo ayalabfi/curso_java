@@ -28,4 +28,5 @@ public class ProdutoPedido {
     public void setPreco(Double preco) {
         this.preco = preco;
     }
+
 }

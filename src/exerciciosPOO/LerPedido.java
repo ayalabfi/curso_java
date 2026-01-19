@@ -31,6 +31,7 @@ public class LerPedido {
         System.out.println();
         System.out.print("Insira o status do pedido: ");
         String status = sc.nextLine();
+        System.out.println();
 
         Date momento = Date.from(Instant.now());
 
@@ -39,9 +40,11 @@ public class LerPedido {
 
         System.out.print("Insira quantos itens serão adicionados ao pedido: ");
         int produtos = sc.nextInt();
+        System.out.println();
 
         for (int i = 1; i <= produtos; i++){
-            System.out.println("Insira os dados do " + i + " produto:");
+            System.out.println("Insira os dados do " + i + "º produto:");
+            sc.nextLine();
             System.out.print("Nome do produto: ");
             String produtoNome = sc.nextLine();
             System.out.print("Preço do produto: ");
@@ -53,5 +56,6 @@ public class LerPedido {
             ItemPedido item = new ItemPedido(produtoQuantidade, produto);
             pedido.adicionarItem(item);
         }
+        System.out.println(pedido);
     }
 }
