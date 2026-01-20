@@ -703,3 +703,21 @@ há várias categorias de classes:
 
 Nota: Embora o símbolo UML para composição (todo-parte) seja o diamante preto, neste contexto
 estamos chamando de composição qualquer associação tipo "tem-um" e "tem vários".
+
+- Herança: É um tipo de associação que permite que uma classe herde todos os dados e comportamentos de outra.
+1 - Herança permite o reuso de atributos e métodos (dados e comportamento) de outra classe
+
+* Definições importantes
+1 - É uma relação "é-um", ou seja, a subclasse é uma superclasse, mas com algo a mais;
+2 - Generalização/especialização: A superclasse é uma generalização, enquanto a subclasse é uma especialização;
+3 - Superclasse (classe base) / subclasse (classe derivada);
+4 - A classe base pode ser chamada de "Herança", enquanto a classe derivada é chamada de "Extensão";
+5 - Herança é uma associação entre classes (e não entre objetos), ou seja, a extensão será um objeto só, e não dois em
+conjunto com a herança.
+
+
+* Vantagens:
+1 - Reuso;
+2 - Polimorfismo;
+
+* Sintaxe: class A extends B
