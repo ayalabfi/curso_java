@@ -721,3 +721,18 @@ conjunto com a herança.
 2 - Polimorfismo;
 
 * Sintaxe: class A extends B
+
+* Upcasting:
+1 - Casting da subclasse para superclasse;
+2 - Uso comum: polimorfismo.
+
+* Downcasting:
+1 - Casting da superclasse para subclasse;
+2 - Palavra instanceof;
+3 - Uso comum: métodos que recebem parâmetros genéricos (ex: Equals).
+
+*Sobreposição ou sobrescrita:
+1 - É a implementação de um método de uma classe base na classe derivada;
+2 - É fortemente recomendável usar a anotação @Override em um método sobrescrito;
+2.1 - Facilita a leitura e compreensão do código;
+2.2 - Avisamos ao compilador (boa prática).

@@ -37,7 +37,7 @@ public class ClasseHeranca {
     }
 
     public void sacar (double quantia){
-        saldo -= quantia;
+        saldo -= quantia + 5;
     }
 
     public void depositar (double quantia){
