@@ -721,3 +721,35 @@ conjunto com a herança.
 2 - Polimorfismo;
 
 * Sintaxe: class A extends B
+
+* Upcasting:
+1 - Casting da subclasse para superclasse;
+2 - Uso comum: polimorfismo.
+
+* Downcasting:
+1 - Casting da superclasse para subclasse;
+2 - Palavra instanceof;
+3 - Uso comum: métodos que recebem parâmetros genéricos (ex: Equals).
+
+*Sobreposição ou sobrescrita:
+1 - É a implementação de um método de uma classe base na classe derivada;
+2 - É fortemente recomendável usar a anotação @Override em um método sobrescrito;
+2.1 - Facilita a leitura e compreensão do código;
+2.2 - Avisamos ao compilador (boa prática).
+
+* Classes e métodos final:
+
+1 - Palavra chave: final;
+2 - Classe: evita que a classe seja herdada;
+2.1 - Sintaxe: public final class nomeClasse{(...)};
+3 - Método: evita que o método seja sobreposto.
+3.1 - Sintaxe: public final void nomeMetodo(){(...)};
+
+4 - Pra quê o final é utilizado?
+4.1 - Segurança: dependendo das regras do negócio, às vezes é desejável garantir que uma classe não seja
+herdada, ou que um método não seja sobreposto;
+4.1.1 - Geralmente convém acrescentar final em métodos sobrepostos, pois sobreposições múltiplas podem
+ser uma porta de entrada para inconsistências;
+4.2 - Performance: atributos de tipo de uma classe final são analisados de forma mais rápida em tempo de
+execução;
+4.2.1 - Exemplo clássico: String (que é uma classe final);

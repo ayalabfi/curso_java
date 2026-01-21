@@ -33,4 +33,12 @@ public class ClasseExtensao extends ClasseHeranca {
             saldo += quantia - 10;
         }
     }
+
+    @Override
+    public void sacar (double quantia){
+        // Realiza o método normalmente com a regra da classe base
+        super.sacar(quantia);
+        saldo -= 2;
+
+    }
 }
