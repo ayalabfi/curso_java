@@ -1,4 +1,4 @@
-package orientacaoAObjetos.entidades;
+package orientacaoAObjetos.Array.entidades;
 
 public class ClasseArray {
 

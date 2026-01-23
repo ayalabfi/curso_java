@@ -1,8 +1,8 @@
-package orientacaoAObjetos;
+package orientacaoAObjetos.Heranca;
 
-import orientacaoAObjetos.entidades.ClasseExtensao;
-import orientacaoAObjetos.entidades.ClasseExtensaoDois;
-import orientacaoAObjetos.entidades.ClasseHeranca;
+import orientacaoAObjetos.Heranca.entidades.ClasseExtensao;
+import orientacaoAObjetos.Heranca.entidades.ClasseExtensaoDois;
+import orientacaoAObjetos.Heranca.entidades.ClasseHeranca;
 
 public class ProgramaHeranca {
 

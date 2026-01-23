@@ -1,4 +1,4 @@
-package orientacaoAObjetos.entidades;
+package orientacaoAObjetos.Heranca.entidades;
 
 // Significa que a "ClasseHerança" tem todos os comportamentos (atributos e métodos) da "ClasseHerdada"
 public class ClasseExtensao extends ClasseHeranca {

@@ -1,16 +1,16 @@
-package orientacaoAObjetos.entidades;
+package orientacaoAObjetos.ClasseAbstrata.entidades;
 
-public class ClasseHeranca {
+// O abstract faz com que essa classe não possa ser instânciada
+public abstract class Conta {
 
     private Integer numero;
     private String titular;
-    // protected faz com que o atributo não seja publico, mas possa ser acessado pela classe derivada
     protected Double saldo;
 
-    public ClasseHeranca(){
+    public Conta(){
     }
 
-    public ClasseHeranca(Integer numero, String titular, Double saldo) {
+    public Conta(Integer numero, String titular, Double saldo) {
         this.numero = numero;
         this.titular = titular;
         this.saldo = saldo;

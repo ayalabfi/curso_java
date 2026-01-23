@@ -1,4 +1,4 @@
-package orientacaoAObjetos.entidades;
+package orientacaoAObjetos.Encapsulamento.entidades;
 
 public class ClasseEncapsulamento {
 

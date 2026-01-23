@@ -1,6 +1,6 @@
-package orientacaoAObjetos;
+package orientacaoAObjetos.Encapsulamento;
 
-import orientacaoAObjetos.entidades.ClasseEncapsulamento;
+import orientacaoAObjetos.Encapsulamento.entidades.ClasseEncapsulamento;
 
 import java.util.Scanner;
 

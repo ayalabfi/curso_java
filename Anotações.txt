@@ -772,3 +772,27 @@ com o objeto para o qual apontam.
 3 - O compilador não sabe para qual tipo específico a chamada do método está sendo feita (ele só sabe
 que são duas variáveis do mesmo tipo específico) nos exemplos, temos classe base como tipo específico e
 classe derivada como tipo genérico.
+
+- Classes abstratas:
+1 - São classes que não podem ser instanciadas;
+2 - É uma forma de garantir herança total: somente subclasses não abstratas podem ser instanciadas, mas nunca a
+superclasse abstrata.
+
+* Se a classe abstrata(superclasse) não pode ser instanciada, porque simplesmente não criar apenas as classes
+derivadas?
+1 - Reuso;
+2 - Polimorfismo: A superclasse classe genérica nos permite tratar de forma fácil e uniforme todos os tipos
+de classe, inclusive com polimorfismo se for o caso. Por exemplo, você pode colocar todos os tipos de classe
+em uma mesma coleção.
+2.2 - Exemplo: Suponha que você tenha 1 superclasse abstrata e 3 classes derivadas em um contexto bancário
+ e queira fazer um depósito de 10 reais em objetos de todos os tipos de classe derivada. Dessa forma, para
+ não ser necessário reescrever todos os métodos variáveis em todas as classes, você usa a superclasse abstrata
+ como uma espécie de forma e escreve a ação de depósito apenas uma vez, ou ajusta com polimorfismo caso sejam
+ necessárias singularidades em alguma determinada classe derivada.
+
+ - Métodos abstratos:
+
+ 1 - São métodos que não possuem implementação;
+ 2 - Métodos precisam ser abstratos quando a classe é genérica demais para conter sua implementação;
+ 3 - Se uma classe possuir pelo menos um método abstrato, então essa classe também é abstrata;
+ 4 - Notação UML: itálico.

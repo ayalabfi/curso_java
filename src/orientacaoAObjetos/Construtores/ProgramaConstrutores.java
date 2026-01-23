@@ -1,7 +1,8 @@
-package orientacaoAObjetos;
+package orientacaoAObjetos.Construtores;
 
 // Importando o objeto ClasseConstrutores
-import orientacaoAObjetos.entidades.ClasseConstrutores;
+
+import orientacaoAObjetos.Construtores.entidades.ClasseConstrutores;
 
 import java.util.Scanner;
 

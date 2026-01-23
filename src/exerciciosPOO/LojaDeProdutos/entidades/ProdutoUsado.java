@@ -4,7 +4,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class ProdutoUsado extends Produto{
-    SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+    public final SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
     private Date dataDeFabricacao;
 
     public ProdutoUsado(){

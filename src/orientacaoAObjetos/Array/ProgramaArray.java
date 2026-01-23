@@ -1,6 +1,6 @@
-package orientacaoAObjetos;
+package orientacaoAObjetos.Array;
 
-import orientacaoAObjetos.entidades.ClasseArray;
+import orientacaoAObjetos.Array.entidades.ClasseArray;
 
 import java.util.Scanner;
 

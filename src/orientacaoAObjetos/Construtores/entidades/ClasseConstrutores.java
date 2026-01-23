@@ -1,4 +1,4 @@
-package orientacaoAObjetos.entidades;
+package orientacaoAObjetos.Construtores.entidades;
 
 public class ClasseConstrutores {
 

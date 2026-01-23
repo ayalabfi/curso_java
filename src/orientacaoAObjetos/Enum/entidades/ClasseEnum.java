@@ -1,6 +1,6 @@
-package orientacaoAObjetos.entidades;
+package orientacaoAObjetos.Enum.entidades;
 
-import orientacaoAObjetos.entidades.enums.ClasseEnumBase;
+import orientacaoAObjetos.Enum.entidades.enums.ClasseEnumBase;
 
 import java.util.Date;
 

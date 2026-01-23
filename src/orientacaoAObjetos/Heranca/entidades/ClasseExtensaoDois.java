@@ -1,4 +1,4 @@
-package orientacaoAObjetos.entidades;
+package orientacaoAObjetos.Heranca.entidades;
 
 public class ClasseExtensaoDois extends ClasseHeranca {
 

@@ -1,4 +1,4 @@
-package orientacaoAObjetos.entidades.enums;
+package orientacaoAObjetos.Enum.entidades.enums;
 
 public enum ClasseEnumBase {
 
