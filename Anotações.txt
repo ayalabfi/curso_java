@@ -754,3 +754,21 @@ ser uma porta de entrada para inconsistências;
 4.2 - Performance: atributos de tipo de uma classe final são analisados de forma mais rápida em tempo de
 execução;
 4.2.1 - Exemplo clássico: String (que é uma classe final);
+
+- Pilares da POO:
+1 - Encapsulamento;
+2 - Herança;
+3 - Polimorfismo.
+
+- Polimorfismo: Em POO, polimorfismo é um recurso que permite que variáveis de um mesmo tipo mais genérico possam
+apontar para objetos de tipos específicos diferentes, tendo assim comportamentos diferentes conforme cada tipo
+específico.
+
+1 - São operações em variáveis do mesmo tipo mas tem comportamentos diferentes de acordo
+com o objeto para o qual apontam.
+
+2 - A associação do tipo específico com o tipo genérico é feita em tempo de execução (upcasting).
+
+3 - O compilador não sabe para qual tipo específico a chamada do método está sendo feita (ele só sabe
+que são duas variáveis do mesmo tipo específico) nos exemplos, temos classe base como tipo específico e
+classe derivada como tipo genérico.
