@@ -1,4 +1,6 @@
-package exerciciosPOO.TratamentoDeExcecoes.SolucaoBoa.entidades;
+package exerciciosPOO.TratamentoDeExcecoes.SolucaoBoa.modelo.entidades;
+
+import exerciciosPOO.TratamentoDeExcecoes.SolucaoBoa.modelo.excecoes.DomainException;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -15,10 +17,13 @@ public class Reserva {
     public Reserva(){
     }
 
-    public Reserva(int quarto, Date checkIn, Date checkOut) {
+    public Reserva(int quarto, Date checkIn, Date checkOut){
         this.quarto = quarto;
         this.checkIn = checkIn;
         this.checkOut = checkOut;
+        if (!checkOut.after(checkIn)) {
+            throw new DomainException("A data de check-out não pode ser anterior a data de check-in!");
+        }
     }
 
     public int getQuarto() {
@@ -45,8 +50,17 @@ public class Reserva {
     }
 
     public void atualizarDatas (Date checkIn, Date checkOut){
-        this.checkIn = checkIn;
-        this.checkOut = checkOut;
+
+        Date now = new Date();
+        if (checkIn.before(now) || checkOut.before(now)) {
+            throw new DomainException("As datas de reserva não podem ser anteriores a data atual!");
+        }
+        if (!checkOut.after(checkIn)) {
+            throw new DomainException("A data de check-out não pode ser anterior a data de check-in!");
+        }
+
+            this.checkIn = checkIn;
+            this.checkOut = checkOut;
     }
 
     @Override
@@ -59,6 +73,6 @@ public class Reserva {
                 + sdf.format(checkOut)
                 + ", "
                 + duracao()
-                + "noites";
+                + " noites";
     }
 }
