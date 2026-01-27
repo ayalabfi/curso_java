@@ -291,6 +291,9 @@ Sintaxe: do {comandos} while (condição);
 10  - str.Split("") -> Recortar a String com base em algum separador indicado e guardar os resultados
 em um vetor.
 
+OBSERVAÇÃO: Esse tópico de Try Catch foi gerado através da aula 1000 devs e consultas próprias, o tópico encontrado
+em informações mais abaixo é a que complementa os conteúdos desse curso.
+
 - Try Catch: É uma função que tenta realizar um comando, e caso ele falhe, é possível passar um parâmetro ou saída.
 Sintaxe: try {codigo} catch (Exception e) {Interações possíveis com e}
 
@@ -796,3 +799,42 @@ em uma mesma coleção.
  2 - Métodos precisam ser abstratos quando a classe é genérica demais para conter sua implementação;
  3 - Se uma classe possuir pelo menos um método abstrato, então essa classe também é abstrata;
  4 - Notação UML: itálico.
+
+ - Exceções
+ 1 - Uma exceção é qualquer codição de erro ou comportamento inesperado encontrado por um programa em execução;
+ 2 - Em Java, uma exceção é um objeto herdado da classe:
+ 2.1 - java.lang.Exception - O compilador obriga a tratar ou propagar;
+ 2.2 - java.lang.RuntimeException - O compilador não obriga a tratar ou propagar.
+ 3 - Quando lançada, uma exceção é propagada na pilha de chamadas de métodos em execução, até que seja capturada
+ (tratada) ou o programa seja encerrado.
+
+ Doc: https://docs.oracle.com/javase/10/docs/api/java/lang/package-tree.html
+ Obs.: para exceções, conferir oque está inserido em Throwable (Errors - Não são trataveis | Exceptions - São trataveis).
+
+* Funcionalidade:
+1 - O modelo de tratamento de exceções permite que erros sejam tratados de forma consistente e flexível, usando boas práticas.
+2 - Vantagens:
+2.1 - Delega a lógica do erro para a classe respon´savel por conhecer as regras que podem ocasionar o erro;
+2.2 - Trata de forma organizada (inclusive hierárquica) exceções de tipos diferentes;
+2.3 - A exceção pode carregar dados quaisquer.
+
+- Estrutura try-catch:
+* Bloco try: Contém o código que representa a execução normal do trecho de código que pode acarretar em uma exceção.
+* Bloco catch:
+1 - Contém o código a ser executado caso uma exceção ocorra;
+2 - Deve ser especificado o tipo da exceção a ser tratada (upcasting é permitido).
+
+* Sintaxe: Try{(...)}catch (TipoDeExceção e) {(...)}
+* Obs.: Um Try pode ter vários catchs que são feitos um após o fechamento do bloco do outro.
+
+* Bloco finally:
+1 - É um bloco que contém código a ser executado independentemente de ter ocorrido ou não uma exceção;
+2 - Exemplo clássico: fechar um arquivo, conexão de banco de dados, ou outro recurso específico ao final
+do processamento.
+Sintaxe: try {(...)}catch{(...)}finally{(...)}
+
+ - Sugestão de pacotes "model"
+ 1 - entities;
+ 2 - enums;
+ 3 - exception;
+ 4 - services.
