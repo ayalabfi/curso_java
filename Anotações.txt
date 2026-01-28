@@ -838,3 +838,32 @@ Sintaxe: try {(...)}catch{(...)}finally{(...)}
  2 - enums;
  3 - exception;
  4 - services.
+
+ - File: Representação abstrata de um arquivo e seu caminho.
+ Doc.: https://docs.oracle.com/javase/10/docs/api/java/io/File.html
+
+ - Scanner: Leitor de texto.
+ Doc.: https://docs.oracle.com/javase/10/docs/api/java/util/Scanner.html
+
+ - IOException (Exception).
+ Doc.: https://docs.oracle.com/javase/10/docs/api/java/io/IOException.html
+
+ - FileReader: É um stream (sequência) de leitura de caracteres a partir de arquivos.
+ Doc.: https://docs.oracle.com/javase/10/docs/api/java/io/FileReader.html
+
+ - BufferedReader (mais rapido).
+ Doc.: https://docs.oracle.com/javase/10/docs/api/java/io/BufferedReader.html
+
+ - Bloco try-with-resources:
+ 1 - É um bloco try que declara um ou mais recursos, e garante que esses recursos serão
+ fechados ao fim do bloco;
+ 2 - Disponível do Java 7 em diante.
+ Doc.: https://docs.oracle.com/javase/tutorial/essential/exceptions/tryResourceClose.html
+
+ - FileWriter: stream (sequência) de escrita de caracteres em arquivos.
+ 1 - Cria/recria o arquivo: new FileWriter(caminho);
+ 2 - Acrescenta ao arquivo existente no fim do arquivo: new FileWriter (path, true).
+ Doc.: https://docs.oracle.com/javase/10/docs/api/java/io/FileWriter.html
+
+ - BufferedWriter (mais rápido).
+ doc.: https://docs.oracle.com/javase/10/docs/api/java/io/BufferedWriter.html
