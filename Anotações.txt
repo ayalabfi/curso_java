@@ -867,3 +867,14 @@ Sintaxe: try {(...)}catch{(...)}finally{(...)}
 
  - BufferedWriter (mais rápido).
  doc.: https://docs.oracle.com/javase/10/docs/api/java/io/BufferedWriter.html
+
+ - Interfaces:
+ 1 - Interface é um tipo que define um conjunto de operações que uma classe deve implementar;
+ 2 - A interface estabelece um contrato que a classe deve cumprir;
+ 3 - O seu uso é destinado à criação de sistemas com baixo acoplamento e flexíveis.
+
+ * mais informações:
+ 1 - A partir do Java 8, interfaces podem ter "default methods" ou "defender methods";
+ 2 - Isso possui implicações conceituais e práticas, que serão discutidas mais à frente neste capítulo;
+ 3 - Primeiro vamos trabalhar com a definição "clássica" de interfaces, depois acrescentaremos o conceito
+ de default methods.
