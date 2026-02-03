@@ -1,6 +1,6 @@
 package orientacaoAObjetos.Interface.model.services;
 
-public class TaxaDeServicoBrasileira {
+public class TaxaDeServicoBrasileira implements TaxaDeServico{
 
     public double taxa(double valor) {
         if (valor <= 100.0) {
