@@ -878,3 +878,12 @@ Sintaxe: try {(...)}catch{(...)}finally{(...)}
  2 - Isso possui implicações conceituais e práticas, que serão discutidas mais à frente neste capítulo;
  3 - Primeiro vamos trabalhar com a definição "clássica" de interfaces, depois acrescentaremos o conceito
  de default methods.
+
+ * Inversão de controle: Padrão de desenvolvimento que consiste em retirar da classe a responsabilidade
+ de instanciar suas dependências.
+
+ * Injeção de dependência: É uma forma de realizar a inversão de controle: um componente externo instancia
+ a dependência, que é então injeatada no objeto "pai". Pode ser implementada de várias formas:
+ 1 - Construtor;
+ 2 - Classe de instanciação (builder/factory);
+ 3 - Container/framework.
