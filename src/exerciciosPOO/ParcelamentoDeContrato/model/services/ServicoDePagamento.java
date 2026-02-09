@@ -1,6 +1,12 @@
 package exerciciosPOO.ParcelamentoDeContrato.model.services;
 
+import exerciciosPOO.ParcelamentoDeContrato.model.entities.Contrato;
+
+import java.text.SimpleDateFormat;
+
 public interface ServicoDePagamento {
 
-    public Double taxa(double valor, int meses);
+    SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+
+    public void taxa(Contrato contrato, int meses);
 }
