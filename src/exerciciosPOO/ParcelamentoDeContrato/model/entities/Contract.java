@@ -7,7 +7,7 @@ import java.util.List;
 
 public class Contract {
 
-    DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+    private static DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 
     private Integer number;
     private LocalDate date;

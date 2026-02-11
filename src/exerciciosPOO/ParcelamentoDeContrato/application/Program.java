@@ -1,7 +1,7 @@
 package exerciciosPOO.ParcelamentoDeContrato.application;
 
 import exerciciosPOO.ParcelamentoDeContrato.model.entities.Contract;
-import exerciciosPOO.ParcelamentoDeContrato.model.services.InstallmentService;
+import exerciciosPOO.ParcelamentoDeContrato.model.services.ContractService;
 import exerciciosPOO.ParcelamentoDeContrato.model.services.PaypalService;
 
 import java.time.LocalDate;
@@ -28,8 +28,8 @@ public class Program {
         int InstallmentQuantity = scanner.nextInt();
 
         Contract contract = new Contract(number, date, contractValue);
-        InstallmentService installmentService = new InstallmentService(contract, new PaypalService(), InstallmentQuantity);
-        installmentService.Installment();
+        ContractService contractService = new ContractService(contract, new PaypalService(), InstallmentQuantity);
+        contractService.Installment();
 
         System.out.println(contract);
     }

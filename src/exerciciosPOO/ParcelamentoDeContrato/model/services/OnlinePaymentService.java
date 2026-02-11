@@ -1,6 +1,6 @@
 package exerciciosPOO.ParcelamentoDeContrato.model.services;
 
-public interface PaymentService {
+public interface OnlinePaymentService {
 
     public double simpleTax();
     public double paymentTax();

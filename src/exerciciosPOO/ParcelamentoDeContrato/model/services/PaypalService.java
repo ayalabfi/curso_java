@@ -1,6 +1,6 @@
 package exerciciosPOO.ParcelamentoDeContrato.model.services;
 
-public class PaypalService implements PaymentService{
+public class PaypalService implements OnlinePaymentService {
 
     public double simpleTax() {
         return 1.0/100.0;
