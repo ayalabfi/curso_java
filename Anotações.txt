@@ -887,3 +887,12 @@ Sintaxe: try {(...)}catch{(...)}finally{(...)}
  1 - Construtor;
  2 - Classe de instanciação (builder/factory);
  3 - Container/framework.
+
+ * Aspectos em comum entre herança e interfaces:
+ 1 - Relação é-um;
+ 2 - Generalização/especialização;
+ 3 - Polimorfismo.
+
+* Diferença fundamental entre herança e interface:
+1 - Herança -> Reuso;
+2 - Interface -> Contrato a ser cumprido.
