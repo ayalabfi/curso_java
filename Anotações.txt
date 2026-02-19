@@ -896,3 +896,7 @@ Sintaxe: try {(...)}catch{(...)}finally{(...)}
 * Diferença fundamental entre herança e interface:
 1 - Herança -> Reuso;
 2 - Interface -> Contrato a ser cumprido.
+
+* Problema do diamante: A herança múltipla pode gerar o problema do diamante: uma ambiguidade causada pela
+existência do mesmo método em mais de uma superclasse.
+Herança múltipla não é permitida na maioria das linguagens!
