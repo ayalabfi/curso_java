@@ -900,3 +900,7 @@ Sintaxe: try {(...)}catch{(...)}finally{(...)}
 * Problema do diamante: A herança múltipla pode gerar o problema do diamante: uma ambiguidade causada pela
 existência do mesmo método em mais de uma superclasse.
 Herança múltipla não é permitida na maioria das linguagens!
+
+* Interface comparable: serve para definir na classe como um objeto será comparado com outro.
+Doc.: https://docs.oracle.com/javase/10/docs/api/java/lang/Comparable.html
+
