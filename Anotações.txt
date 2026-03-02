@@ -904,3 +904,20 @@ Herança múltipla não é permitida na maioria das linguagens!
 * Interface comparable: serve para definir na classe como um objeto será comparado com outro.
 Doc.: https://docs.oracle.com/javase/10/docs/api/java/lang/Comparable.html
 
+* Default methods (defender methods):
+1 - A partir do Java 8, interfaces podem conter métodos concretos;
+2 - A intenção básica é prover implementação padrão para métodos, de modo a evitar:
+2.1 - repetição de implementação em toda classe que implemente a interface;
+2.2 - a necessidade de se criar classes abstratas para prover reuso da implementação;
+3 - Outras vantagens:
+3.1 - Manter a retrocompatibilidade com sistemas existentes;
+3.2 - permitir que "interfaces funcionais" (que devem conter apenas um método) possam prover
+outras operações padrão reutilizaveis.
+
+* Considerações importantes sobre interface:
+1 - Interfaces podem prover reuso;
+2 - temos uma forma de herança múltipla:
+2.1 - Mas o compilador reclama se houver mais de um método com a mesma assinatura,
+obrigando a sobrescreve-lo;
+3 - Interfaces ainda são bem diferentes de classes abstratas. Interfaces não possuem recursos
+tais como construtores e atributos.
