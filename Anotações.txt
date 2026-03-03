@@ -921,3 +921,11 @@ outras operações padrão reutilizaveis.
 obrigando a sobrescreve-lo;
 3 - Interfaces ainda são bem diferentes de classes abstratas. Interfaces não possuem recursos
 tais como construtores e atributos.
+
+ - Generics: Generics permitem que classes, interfaces e métodos possam ser parametrizados por
+ tipos. Seus benefícios são:
+ 1 - Reuso;
+ 2 - Type safety;
+ 3 - Performance.
+
+ * Uso comum: coleções
