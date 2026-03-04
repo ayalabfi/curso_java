@@ -23,10 +23,10 @@ public class PrintService<T> {
         if (!list.isEmpty()){
             System.out.print(list.get(0));
         }
-        for (int i = 0; i < list.size(); i++){
+        for (int i = 1; i < list.size(); i++){
             System.out.print(", " + list.get(i));
         }
-        System.out.print("]");
+        System.out.print("]\n");
     }
 
 }
