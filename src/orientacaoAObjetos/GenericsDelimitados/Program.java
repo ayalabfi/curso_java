@@ -25,8 +25,8 @@ public class Program {
         try (BufferedReader br = new BufferedReader(new FileReader(path))){
 
             String line = br.readLine();
-            String[] fields = line.split(",");
             while (line != null) {
+                String[] fields = line.split(",");
                 list.add(new Product(fields[0], Double.parseDouble(fields[1])));
                 line = br.readLine();
             }

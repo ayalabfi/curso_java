@@ -3,6 +3,7 @@ package orientacaoAObjetos.Generics.services;
 import java.util.ArrayList;
 import java.util.List;
 
+// O <T> a frente do nome da classe especifica um objeto do tipo genérico, neste caso, do tipo T.
 public class PrintService<T> {
 
     List<T> list = new ArrayList<>();
