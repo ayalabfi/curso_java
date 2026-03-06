@@ -929,3 +929,10 @@ tais como construtores e atributos.
  3 - Performance.
 
  * Uso comum: coleções
+
+ * Generics são invariantes:
+ 1 - List<Objetct> não é o supertipo de qualquer tipo de lista;
+ 2 - O supertipo de qualquer tipo de lista é List<?>. Esté é um tipo curinga.
+ 3 - Não é possível adicionar um valor a uma List do tipo ?, pois  o compilador não sabe de qual tipo
+ serão os dados inclusos nessa lista, então só é possível utilizar o tipo curinga para referenciar outra
+ lista com um tipo genérico já definido (String, Integer, Char...)
