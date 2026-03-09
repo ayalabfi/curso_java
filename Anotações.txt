@@ -936,3 +936,14 @@ tais como construtores e atributos.
  3 - Não é possível adicionar um valor a uma List do tipo ?, pois  o compilador não sabe de qual tipo
  serão os dados inclusos nessa lista, então só é possível utilizar o tipo curinga para referenciar outra
  lista com um tipo genérico já definido (String, Integer, Char...)
+
+ * hashCode e equals:
+ 1 - São operações da classe Object utilizadas para comparar se um objeto é igual a outro;
+ 2:
+ 2.1 - equals: lento, resposta 100%;
+ 2.2 - hashCode: rápido, porém resposta positiva não é 100%;
+ 3 - Tipos comuns (String, Date, Integer, Double, etc.) já possuem implementação para essas operações.
+ Classes personalizadas precisam sobrepô-las;
+4 -  ==, com exceção de tipos, compara as referências de memória, como são objetos, mesmo tendo mesmos
+ valores atribuídos, recebem no reap códigos divergentes, devido a isso, para objetos sempre
+  é retornado falso.
