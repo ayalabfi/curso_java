@@ -947,3 +947,34 @@ tais como construtores e atributos.
 4 -  ==, com exceção de tipos, compara as referências de memória, como são objetos, mesmo tendo mesmos
  valores atribuídos, recebem no reap códigos divergentes, devido a isso, para objetos sempre
   é retornado falso.
+
+  * Set<T>:
+  1 - É um tipo genérico assim como a lista;
+  2 - Representa um conjunto de elementos (similar ao da Álgebra);
+  3 - Não admite repetições;
+  4 - Elementos não possuem posição;
+  5 - Acesso, inserção e remoção de elementos são rápidos;
+  6 - Oferece operações eficientes de conjunto: interseção, união, diferença;
+  7 - Principais implementações:
+  7.1 - HashSet - mais rápido (operações O(1) em tabela hash) e não ordenado;
+  7.2 - TreeSet (Operações O(log(n)) em árvore rubro-negra) e ordenado pelo compareTo do objeto (ou Comparator);
+  7.3 - LinkedHashSet - velocidade intermediária e elementos na ordem em que são adicionados.
+  8 - Alguns métodos importantes:
+  8.1 - add(obj), remove(obj), contains(obj);
+  8.1.1 - Baseado em equals e hashCode;
+  8.1.2 - Se equals e hashCode não existir, é usada comparação de ponteiros.
+  8.2 - clear();
+  8.3 - size();
+  8.4 - removeIf(predicate);
+  8.5 - addAll(other) - união: adiciona no conjunto os elementos do outro conjunto, sem repetição;
+  8.6 - retainAll(other) - interseção: remove do conjunto os elementos não contidos em other;
+  8.7 - removeAll(other) - diferença: remove do conjunto os elementos contidos em other;
+  Doc.: https://docs.oracle.com/javase/10/docs/api/java/util/Set.html
+
+  * Como as coleções Hash testam igualdade:
+  1 - Se hashCode e equals estiverem implementados:
+  1.1 - Primeiro hashCode. Se der igual, usa equals para confirmar;
+  1.2 - Lembre-se: String, Integer, Double, etc. já possuem equals e hashCode.
+  2 - Se hashCode e equals não estiverem implementados:
+  2.1 - Compara as referências (ponteiros) dos objetos.
+
