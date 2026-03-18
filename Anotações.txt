@@ -978,5 +978,27 @@ tais como construtores e atributos.
   2 - Se hashCode e equals não estiverem implementados:
   2.1 - Compara as referências (ponteiros) dos objetos.
 
+*Map<K,V>:
+1 - É uma coleão de pares chave / valor;
+2 - Não admite repetições do objeto chave;
+3 - Os elementos são indexados pelo objeto chave (não possuem posição);
+4 - Acesso, inserção e remoção de elementoes são rápidos.
 
+Uso comum: cookies, local storage, qualquer modelo chave-valor;
 
+Principais implementações:
+1 - HashMap - mais rápido (operações O(1) em tabela hash) e não ordenado;
+2 - TreeMap - mais lento (operações O(log(n)) em árvore rubro-negra) e ordenado pleo compareTo do objeto
+(ou Comparator);
+3 - LinkedHashMap - velocidade intermediária e elementos na ordem em que são adicionados.
+
+Alguns métodos importantes:
+1 - put (key, value), remove(key), containsKey(key), get(key);
+1.1 - Baseado em equals e hashCode;
+1.2 - Se equals e hashCode não existir, é usada comparação de ponteiros;
+2 - clear();
+3 - size();
+4 - keySet() - retorna um Set<K>;
+5 - values() - retorna um Collection(V).
+
+Doc.: https://docs.oracle.com/javase/10/docs/api/java/util/Map.html
