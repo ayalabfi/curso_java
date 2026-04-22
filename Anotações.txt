@@ -1002,3 +1002,9 @@ Alguns métodos importantes:
 5 - values() - retorna um Collection(V).
 
 Doc.: https://docs.oracle.com/javase/10/docs/api/java/util/Map.html
+
+
+- Comparator: É uma interface funcional (uma interface com apenas um método, seja ele default
+ou estático).
+Sintaxe: compare(T o1, T o2);
+Doc.: https://docs.oracle.com/javase/jp/10/docs/api/index.html?java/util/Comparator.html
