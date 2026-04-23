@@ -1008,3 +1008,34 @@ Doc.: https://docs.oracle.com/javase/10/docs/api/java/util/Map.html
 ou estático).
 Sintaxe: compare(T o1, T o2);
 Doc.: https://docs.oracle.com/javase/jp/10/docs/api/index.html?java/util/Comparator.html
+
+* Paradigmas de programação:
+1 - Imperativo (C, Pascal, Fortran, Cobol);
+2 - Orientado a objetos (C++, Object Pascal, Java (< 8), C# (< 3));
+3 - Funcional (Haskell, Closure, Clean, Erlang);
+4 - Lógico (Prolog);
+5 - Multiparadigma (JavaScript, Java (8+), C# (3+), Ruby, Python, Go).
+
+* Paradigma funcional de programação: Baseado no formalismo matemático Cálculo Lambda (Church 1930)
+
+Programação Imperativa x Programação Funcional:
+1 - Como se descreve algo a ser computado (*):
+Comandos ("Como" - imperativa) -- Expressões ("o quê" - declarativa)
+
+2 - Funções possuem transparência referencial (ausência de efeitos colaterais):
+fraco -- forte
+
+3 - Objetos imutáveis (*):
+raro -- comum
+
+4 - Funções são objetos de primeira ordem:
+não -- sim
+
+5 - Expressividade / código conciso:
+baixa -- alta
+
+6 - Tipagem dinâmica / inferência de tipos:
+raro -- comum
+
+* O que são "expressões lambda"?: Em programação funcional, expressão lambda corresponde a uma função
+anônima de primeira classe.
