@@ -1039,3 +1039,19 @@ raro -- comum
 
 * O que são "expressões lambda"?: Em programação funcional, expressão lambda corresponde a uma função
 anônima de primeira classe.
+
+* Interface funcional: É uma interface que possui um único método abstrato. Suas implementações serão
+tratadas como expressões lambda.
+
+* Algumas interfaces funcionais:
+
+1 - Predicate:
+Doc.: https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html
+
+2 - Function:
+Doc.: https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html
+
+3 - Consumer:
+Doc.: https://docs.oracle.com/javase/8/docs/api/java/util/function/Consumer.html
+Nota: Ao contrário das outras interfaces funcionais, no caso do Consumer, é esperado que ele possa
+gerar efeitos colaterais.
