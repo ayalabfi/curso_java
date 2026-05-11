@@ -1051,8 +1051,83 @@ Doc.: https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.htm
 2 - Function:
 Doc.: https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html
 
+Sintaxe: public interface Function <T,R>{
+R apply(T t);
+}
+
 3 - Consumer:
 Doc.: https://docs.oracle.com/javase/8/docs/api/java/util/function/Consumer.html
 Nota: Ao contrário das outras interfaces funcionais, no caso do Consumer, é esperado que ele possa
 gerar efeitos colaterais.
+
+Sintaxe: public interface Consumer<T>{
+void accept (T t);
+}
+
+* Nota sobre a função map:
+1 - A função "map" (não confunda com a estrutura da dados Map) é uma função que aplica uma função a todos
+os elementos de uma stream.
+2 - Conversões:
+2.1 - List para stream: .stream();
+2.2 Stream para List: .collect(Collectors.toList());
+
+* Stream:
+1 - É uma sequência de elementos advinda de uma fonte de dados que oferece suporte a "operações agregadas".
+1.1 - Fonte de dados: coleção, array, função de iteração, recurso de Entrada/Saída.
+Doc.: https://www.oracle.com/br/technical-resources/articles/java-stream-api.html
+
+Características:
+1 - Stream é uma solução para processar sequências de dados de forma:
+1.1 - Declarativa (iteração interna: escondida do programador);
+1.2 - Parallel-friendly (imutável -> thread safe);
+1.3 - Sem efeitos colaterais;
+1.4 - Sob demanda (lazy evaluation).
+2 - Acesso sequencial (não há indices);
+3 - Single-use: só pode ser "usada" uma vez;
+4 - Pipeline: operações em streams retornam novas streams. Então é possível criar uma cadeia de operações
+(fluxo de processamento).
+
+Operações intermediárias e terminais:
+1 - O pipeline é composto por zero ou mais operações intermediárias e uma terminal;
+2 - Operação intermediária:
+2.1 - Produz uma nova streams (encadeamento)
+2.2 - Só executa quando uma operação terminal é invocada (lazy evaluation)
+3 - Operação terminal:
+3.1 - Produz um objeto não-stream (coleção ou outro);
+3.2 - Determina o fim do processamento da stream.
+
+Operações intermediarias:
+1 - filter;
+2 - map;
+3 - flatmap;
+4 - peek;
+5 - distinct;
+6 - sorted;
+7 - skip;
+8 - limit (*);
+* short-circuit.
+
+Operações terminais:
+1 - forEach;
+2 - forEachOrdered;
+3 - toArray;
+4 - reduce;
+5 - collect;
+6 - min;
+7 - max;
+8 - count;
+9 - anyMatch (*);
+10 - allMatch (*);
+11 - noneMatch (*);
+12 - findFirst (*);
+13 - findAny(*);
+* short-circuit.
+
+Criar uma stream:
+1 - Basta chamar o método stream() ou parallelStream() a partir de qualquer objeto Collection;
+1.1 - doc.: https://docs.oracle.com/javase/10/docs/api/java/util/Collection.html
+2 - Outras formas de se criar uma stream incluem:
+2.1 - Stream.of;
+2.2 - Stream.ofNullable;
+2.3 - Stream.iterate.
 
