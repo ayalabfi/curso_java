@@ -46,9 +46,15 @@ public class Program {
 
             emails.forEach(System.out::println);
 
-            System.out.println("Soma do salário das pessoas que tem o primeiro nome se iniciando com M: ");
+            System.out.print("Insira a primeira letra a ser filtrada: ");
+            char letter = sc.next().charAt(0);
+
             Double sum = list.stream()
-                    .filter()
+                    .filter(p -> p.getName().charAt(0) == letter)
+                    .map(p -> p.getSalary())
+                    .reduce(0.0,(x,y) -> x + y);
+
+            System.out.printf("Soma dos salários cujo operadores tem nomes que se iniciam com '" + letter + "': %.2f",sum);
 
         } catch (IOException e) {
             System.out.println("Erro: " + e.getMessage());
